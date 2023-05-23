@@ -7,6 +7,10 @@
     <title>Multer</title>
   </head>
   <body>
+    <form action="/search" method="get">
+      <input type="text" name="term" />
+      <input type="submit" value="Search" />
+    </form>
     <h1>Upload file</h1>
     <%if(locals.message){%>
     <h3 style="color: orange"><%=message%></h3>
